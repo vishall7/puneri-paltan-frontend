@@ -1,0 +1,187 @@
+.paltan {
+    height: 135vh;
+    width: 100%;
+    background-image: url("../../../assets/Images/home/fixtures-bg.jpg");
+    display: flex;
+    align-items: flex-end;
+}
+
+.paltanBanner {
+    background-image: url("../../../assets/Images/home/puneri-world-bg_S111.jpg");
+    background-position: center;
+    background-size: 130%;
+    background-repeat: no-repeat;
+    width: 100%;
+    position: relative;
+    z-index: 1;  
+    overflow: hidden; 
+}
+
+.paltanBanner .paltanBannerImageMobile {
+    display: none;
+}
+
+.leftDust, .rightDust, .middleDust {
+    position: absolute;
+    z-index: -1;    
+}
+
+.paltanBanner div .leftDust {    
+    left: 0;
+    bottom: 10px;
+}
+
+.paltanBanner div .middleDust {
+    right: 21%;
+    bottom: -75px;    
+}
+
+.paltanBanner div .rightDust {
+    right: 10%;
+    bottom: 100px;
+}
+
+.paltanText {
+    position: absolute;
+    right: 12%;
+    top: 40%;
+}
+
+.paltanText h1 {
+    color: white;
+    font-size: 110px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 68%;
+}
+
+.paltanText :nth-child(1){
+    color: #FF7500;
+} 
+
+.paltanText :nth-child(2) {
+    margin-left: 8%;    
+}
+
+.paltanText button {
+    position: absolute;
+    left: 35%;
+    margin-top: 23px;
+    z-index: 999;
+}
+
+/* media query for mobile devices */
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .paltan {
+        height: 60vh;
+        width: 100%;
+    }
+
+    .paltanBanner {
+        background-size: cover;  
+        height: 65%;
+        display: flex;
+        align-items: flex-end;    
+        overflow: visible;  
+    }
+    
+    .paltanBanner .paltanBannerImageFull {
+        display: none;
+    }
+
+    .paltanBanner .paltanBannerImageMobile {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .leftDust, .middleDust, .rightDust {
+        left: 20%;
+        top: 10%;
+        height: 200px;
+        width: 200px;
+    }
+
+    .middleDust {
+        left: 40%;
+    }
+
+    .paltanText {
+        position: absolute;
+        right: 20%;
+        top: 48%;
+    }
+
+    .paltanText h1 {
+        color: white;
+        font-size: 65px;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 68%;
+    }
+
+    .paltanText button {
+        left: 20%;
+        top: 87%;
+        padding: 7px 70px;
+        z-index: inherit;
+    }
+}
+
+/* media query for tablets */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .paltan {
+        height: 80vh;
+        width: 100%;
+    }
+
+    .paltanBanner {
+        background-size: cover;  
+        height: 70%;
+        display: flex;
+        align-items: flex-end;      
+    }
+
+    .paltanBanner .paltanBannerImageFull {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .paltanBanner .paltanBannerImageMobile {
+        display: none;
+    }
+
+    .leftDust, .middleDust, .rightDust {
+        left: 20%;
+        top: 10%;
+        height: 300px;
+        width: 300px;
+    }
+
+    .middleDust {
+        left: 40%;
+    }
+
+    .paltanText {
+        position: absolute;
+        right: 10%;
+        top: 48%;
+    }  
+
+    .paltanText h1 {
+        color: white;
+        font-size: 70px;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 68%;
+    }
+
+    .paltanText button {
+        left: 10%;
+        top: 87%;
+        padding: 7px 80px;
+    }
+}

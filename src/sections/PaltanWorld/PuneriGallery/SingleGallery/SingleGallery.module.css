@@ -1,0 +1,143 @@
+.imageGallery {
+    padding: 60px 170px;
+}
+
+.imageGallery h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    color: #FF4400;
+}
+
+.imageGallery div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);   
+    gap: 12px;
+    margin-top: 50px;
+}
+
+.imageGallery div img {
+    width: 100%;
+    height: 44vh;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.previousAndNext {
+    display: flex;
+    width: 100%;
+    height: 50vh;
+}
+
+.previousAndNext > div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: 50% 30%;
+    background-size: 120%;
+    background-repeat: no-repeat;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.previousAndNext > div:hover {
+    background-size: 140%;
+}
+
+.previousAndNext div::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.previousAndNext > div h3 {   
+    color: white;
+    font-size: 1.7rem;
+    font-weight: 400;
+    letter-spacing: 1px; 
+    z-index: 1;   
+} 
+
+/* media query for mobile devices */
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .imageGallery {
+        padding: 50px 10px;
+    }
+
+    .imageGallery h1 {
+        font-size: 1.7rem;
+    }
+
+    .imageGallery div {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 14px;
+        margin-top: 50px;
+    }
+
+    .imageGallery div img {
+        height: auto;
+        width: 100%;
+        object-fit: cover;
+    }
+    
+    .previousAndNext {
+        flex-direction: column;
+        height: 50vh;
+    }
+
+    .previousAndNext > div {
+        height: 50%;   
+    }
+
+    .previousAndNext > div h3 {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    
+}
+
+/* media query for tablet devices */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .imageGallery {
+        padding: 50px 10px;
+    }
+
+    .imageGallery h1 {
+        font-size: 3rem;
+        padding: 0 50px;
+    }
+
+    .imageGallery div {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 14px;
+        margin-top: 50px;
+    }
+
+    .imageGallery div img {
+        height: auto;
+        width: 100%;
+        object-fit: cover;
+    }
+    
+    .previousAndNext {
+        height: 40vh;
+    }
+
+    .previousAndNext > div {
+        height: 100%;
+        width: 50%;
+    }
+
+    .previousAndNext > div h3 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+}

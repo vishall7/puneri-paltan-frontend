@@ -1,0 +1,17 @@
+.button {
+    background: linear-gradient(to right, #df3100 10%, #FF9C49 90%);
+    color: white;
+    padding: 5px 100px;
+    border: none;
+    font-size: 1.4rem;
+    letter-spacing: 3px;
+    cursor: pointer;
+    text-transform: capitalize;
+    transition: all .4s ease-in-out;
+    transform: skewX(-15deg);
+}
+
+.button:hover {
+    /* background-size: 100% 300%; */
+    background-image: linear-gradient(to right, #df3100 0, #ff7500 50%, #df3100 100%);
+}

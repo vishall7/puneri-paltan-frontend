@@ -1,0 +1,126 @@
+.paltanWorld {
+    height: 83vh;
+    background-image: url("../../assets/Images/paltan-world/paltan-world-banner-desktop-s11.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+}
+
+.grid > div {
+    height: 112vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.grid > div:nth-child(1){
+    background-image: url("../../assets/Images/paltan-world/puneri-tv-2024.png");
+}
+
+.grid > div:nth-child(2){
+    background-image: url("../../assets/Images/paltan-world/puneri-gallery-2024.png");
+}
+
+.grid > div:nth-child(3){
+    background-image: url("../../assets/Images/paltan-world/puneri-wallpapers.png");
+}
+
+.grid > div:nth-child(4){
+    background-image: url("../../assets/Images/paltan-world/puneri-blogs.png");
+}
+
+.grid > div h1 {
+    font-size: 4.5rem;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+/* media query for mobile devices */
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .paltanWorld {
+        background-image: url("../../assets/MobileView-Images/paltan-world-banner-mobile_s11.png");
+        height: 59vh;
+    }  
+    
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+    }
+    
+    .grid > div {
+        height: 100vh;
+        width: 100%;       
+    }
+
+    .grid > div:nth-child(1){
+        background-position: 55% center;
+    }
+    
+    .grid > div:nth-child(2),
+    .grid > div:nth-child(3){
+        background-position: 45% center;
+    }   
+    
+    .grid > div:nth-child(4){
+        background-position: 55% center;        
+    }
+
+    .grid > div h1 {
+        font-size: 2.8rem;
+    }
+}
+
+/* media screen for tablets  */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .paltanWorld {
+        height: 55vh;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    } 
+    
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+    }
+    
+    .grid > div {
+        height: 100vh;
+        width: 100%;       
+    }
+    
+    .grid > div:nth-child(1){
+        background-position: 55% center;
+    }
+    
+    .grid > div:nth-child(2),
+    .grid > div:nth-child(3){
+        background-position: 45% center;
+    }   
+    
+    .grid > div:nth-child(4){
+        background-position: 55% center;        
+    }
+
+    .grid > div h1 {
+        font-size: 4.3rem;
+    }
+}

@@ -1,0 +1,26 @@
+.pageNotFound {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.pageNotFound > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+    height: 45%;
+    width: 40%;
+}
+
+.pageNotFound > div > h1 {
+    color: #FF7500;
+    font-size: 3rem;
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: capitalize;
+}

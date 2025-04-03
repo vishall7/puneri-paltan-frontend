@@ -1,0 +1,739 @@
+.singlePlayer {
+  width: 100%;
+}
+
+.singlePlayer > img:nth-child(1) {
+  width: 100%;
+  height: auto;
+}
+
+.singlePlayer > img:nth-child(2) {
+  display: none;
+}
+
+.playerInfo {
+  display: flex;
+  width: 100%;
+  padding: 2.8rem 110px;
+  background-image: url("../../../assets/Images/players/player-desc-bg.jpg");
+}
+
+.playerInfo > .playerImage {
+  width: 40%;
+}
+
+.playerImage img {
+  width: 80%;
+  height: auto;
+}
+
+.title {
+  display: flex;
+  width: 200px;
+  justify-content: center;
+  align-items: center;
+  padding: 7px 14px;
+  background-color: #ff4400;
+  transform: skewX(-15deg);
+}
+
+.title h2 {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 2px;
+  padding: 0;
+}
+
+.playerDetails {
+  width: 60%;
+  padding: 0 15px;
+}
+
+.playerDetails > div:nth-child(1) {
+  display: flex;
+  padding-bottom: 77px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.playerDetails > div:nth-child(1) > div {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+}
+
+.playerDetails > div p {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: black;
+  text-transform: uppercase;
+}
+
+.playerDetails > div:nth-child(2) {
+  padding: 55px 0;
+}
+
+.playerDetails > div:nth-child(2) .table {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 50px 5px;
+}
+
+.playerDetails > div:nth-child(2) .table > div {
+  display: flex;
+  align-items: center;
+  padding: 5px 0;
+}
+
+.playerDetails > div:nth-child(2) .table > div > h3 {
+  font-size: 17px;
+  font-weight: 400;
+  color: black;
+  width: 45%;
+}
+
+.playerDetails > div:nth-child(2) .table > div > h3:nth-child(1) {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.playerDetails > div:nth-child(2) .table > div > h3:nth-child(2) {
+  text-transform: capitalize;
+}
+
+.statistics {
+  padding-top: 5px;
+}
+
+.statistics > h1 {
+  font-size: 6.5rem;
+  font-weight: 700;
+  color: #ff7500;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  line-height: 90%;
+  margin-bottom: 20px;
+}
+
+.infoDisplay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 160px;
+  margin-top: 7px;
+}
+
+.infoDisplay > div:nth-child(1) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  padding: 5px 0;
+  background-color: #ffffff;
+}
+
+.infoDisplay > div:nth-child(1) > h1 {
+  font-size: 2.7rem;
+  font-weight: 500;
+  color: black;
+  margin-bottom: 4px;
+}
+
+.infoDisplay > div:nth-child(2) > h3 {
+  font-size: 18px;
+  font-weight: 400;
+  color: black;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px;
+  line-height: 1em;
+}
+
+.statistics .overall {
+  padding: 70px 0 60px;
+  background-color: #edeef2;
+  display: flex;
+  gap: 67px;
+}
+
+.statistics .overall > div:nth-child(1) {
+  align-self: flex-start;
+  margin-bottom: 0;
+}
+
+.statistics .raidTackle {
+  padding: 70px 0 60px;
+  display: flex;
+  gap: 50px;
+  background-color: #ffffff;
+}
+
+.statistics .raidTackle > div:nth-child(1) {
+  align-self: flex-start;
+  margin-bottom: 0;
+}
+
+.statistics .raidTackle > div:nth-child(2) {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 25px;
+  position: relative;
+  z-index: 1;
+}
+
+.statistics .raidTackle > div:nth-child(2)::after {
+  content: "";
+  position: absolute;
+  top: -22px;
+  right: -35px;
+  width: 2px;
+  height: 275px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.statistics .raidTackle > div:nth-child(3) {
+  display: flex;
+  align-items: center;
+}
+
+.statistics .raidTackle > div:nth-child(3) > .circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  background-color: #ff7500;
+  position: relative;
+  z-index: 1;
+}
+
+.statistics .raidTackle > div:nth-child(3) > .circle > div {
+  height: 80%;
+  width: 80%;
+  border-radius: 50%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.statistics .raidTackle > div:nth-child(3) > .circle > div > p {
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  font-weight: 500;
+  color: black;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+.statistics .raidTackle > div:nth-child(3) > .circle > div > h1 {
+  font-size: 3.7rem;
+  font-weight: 650;
+  color: black;
+  line-height: 80%;
+}
+
+.statistics .raidTackle > div:nth-child(3) .strike {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 20px;
+}
+
+.statistics .raidTackle > div:nth-child(3) .strike > div {
+  padding: 2px 5px;
+  background-color: #fff;
+  transform: skewX(-15deg);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 80%;
+}
+
+.statistics .raidTackle > div:nth-child(3) .strike > div > h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: black;
+  text-align: center;
+  line-height: 90%;
+}
+
+.statistics .raidTackle > div:nth-child(3) .strike p {
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  font-weight: 400;
+  color: black;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  width: 80%;
+  line-height: 1.2em;
+}
+
+.statistics .tackle {
+  background-color: #edeef2;
+}
+
+.tackleCircle {
+  background: conic-gradient(#0e0e2c 42% 10%, #ff7500 0% 75%);
+}
+
+.otherPlayers {
+  padding: 30px 0 50px;
+  background-color: #ffffff;
+}
+
+.otherPlayers > h1 {
+  font-size: 6.5rem;
+  font-weight: 700;
+  color: #ff7500;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  margin-bottom: 40px;
+}
+
+.otherPlayers > .playersDiv {
+  height: 60vh;
+  width: 80%;
+  margin: 0 auto;
+  background-color: #edeef2;
+  display: flex;
+  position: relative;  
+}
+
+.otherPlayers > .playersDiv > div {
+  width: 100%;
+  height: 100%;
+}
+
+.playersDiv > .prev,
+.playersDiv > .next {
+  height: 40px;
+  width: 55px;
+  border-radius: 20px;
+  background-color: #ff7500;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;  
+}
+
+.playersDiv > .prev{
+  left: -30px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.playersDiv > .next{
+  right: -30px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.playersDiv > .prev span,
+.playersDiv > .next span {
+  width: 0;
+  height: 0;
+  border: 7px solid transparent;
+  border-left-color: #fff;
+  margin-left: 10px;
+}
+
+.playersDiv > .prev span {
+  width: 0;
+  height: 0;
+  border: 7px solid transparent;
+  border-right-color: #fff;
+  margin-right: 20px;  
+}
+
+.playersDiv > .slide:nth-child(1) {
+  background-color: #494949;
+}
+
+.playersDiv > .slide:nth-child(2) {
+  background-color: #202020;
+}
+
+.slide {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.slide > div {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.slide > div:nth-child(1) > h1 {
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 3px;
+  line-height: .6em;
+  color: #fff;
+}
+
+.slide > div:nth-child(1) > p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 2px;
+  color: #ff7500;
+  line-height: .8em;
+}
+
+.slide > div:nth-child(1) > h1:nth-child(2) {
+  font-weight: 700;
+}
+
+.slide > div:nth-child(1) {
+  padding-left: 50px;
+}
+
+.slide > div:nth-child(2) {
+  position: relative;
+  padding-right: 50px;
+}
+
+.slide > div:nth-child(2) > img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  z-index: 1;
+  top: 30%;
+  transform: rotateY(180deg);
+}
+
+/* media query for mobile devices */
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .singlePlayer {
+    width: 100%;
+  }
+
+  .singlePlayer > img:nth-child(1) {
+    display: none;
+  }
+
+  .singlePlayer > img:nth-child(2) {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .playerInfo {
+    flex-direction: column;
+    padding: 2.8rem 0;
+  }
+
+  .playerInfo > .playerImage {
+    width: 100%;
+  }
+
+  .playerImage img {
+    width: 100%;
+    height: auto;
+  }
+
+  .playerDetails {
+    width: 100%;
+  }
+
+  .playerDetails > div:nth-child(1) {
+    padding-bottom: 70px;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .playerDetails > div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 0;
+  }
+
+  .playerDetails > div:nth-child(2) .table {
+    width: 100%;
+    padding: 40px 5px 0;
+  }
+
+  .playerDetails > div:nth-child(2) .table > div > h3 {
+    width: 100%;
+  }
+
+  .statistics > h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+
+  .statistics .overall {
+    padding: 60px 0 50px;
+    background-color: #edeef2;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .infoDisplay {
+    width: 100%;
+  }
+
+  .statistics .raidTackle {
+    padding: 60px 0 50px;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .statistics .raidTackle > div:nth-child(2) {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+  }
+
+  .statistics .raidTackle > div:nth-child(2)::after {
+    display: none;
+  }
+
+  .statistics .raidTackle > div:nth-child(3) {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .statistics .raidTackle > div:nth-child(3) .strike {
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .statistics .raidTackle > div:nth-child(3) .strike p {
+    width: 100%;
+  }
+
+  .otherPlayers {
+    padding: 30px 10px 50px;
+  }
+
+
+  .otherPlayers > h1 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+  }
+
+  .otherPlayers > .playersDiv {
+    width: 100%;
+  }
+
+  .otherPlayers > .playersDiv > div {
+    width: 100%;
+    padding: 0 10px;
+    flex-direction: column;
+  }
+
+  .playersDiv > div:nth-child(2){
+    display: none;
+  }
+
+  .playersDiv > .slide > div:nth-child(1) {
+    padding-left: 0;
+  }
+
+  .playersDiv > .slide > div:nth-child(2) {
+    padding-right: 0;
+  }
+
+  .playersDiv > .slide > div:nth-child(2) > img {
+    width: 100%;
+    height: auto;
+    top: -20%;
+  }
+  
+  .playersDiv > .prev,
+  .playersDiv > .next {
+    display: none;
+  }
+}
+
+/* media query for tablets  */
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .singlePlayer {
+    width: 100%;
+  }
+
+  .singlePlayer > img:nth-child(1) {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .singlePlayer > img:nth-child(2) {
+    display: none;
+  }
+
+  .playerInfo {
+    flex-direction: column;
+    padding: 2.8rem 0;
+  }
+
+  .playerInfo > .playerImage {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .playerImage img {
+    width: 63%;
+    height: auto;
+  }
+
+  .playerDetails {
+    padding: 0 20px;
+    width: 100%;
+  }
+
+  .playerDetails > div:nth-child(1) {
+    padding: 40px 0 70px;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .playerDetails > div:nth-child(2) {
+    width: 100%;
+    padding-bottom: 0;
+  }
+
+  .playerDetails > div:nth-child(2) .table {
+    width: 100%;
+    padding: 40px 5px 0;
+  }
+
+  .playerDetails > div:nth-child(2) .table > div > h3 {
+    width: 100%;
+    font-size: 1.2rem;
+  }
+
+  .statistics > h1 {
+    font-size: 4.7rem;
+    margin-bottom: 15px;
+  }
+
+  .statistics .overall {
+    padding: 60px 0 50px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .statistics .overall > div:nth-child(1) {
+    align-self: flex-start;
+    width: 70%;
+  }
+
+  .infoDisplay {
+    width: 100%;
+  }
+
+  .statistics .raidTackle {
+    padding: 60px 0 50px;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .statistics .raidTackle > div:nth-child(2) {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+  }
+
+  .statistics .raidTackle > div:nth-child(2)::after {
+    display: none;
+  }
+
+  .statistics .raidTackle > div:nth-child(3) {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .statistics .raidTackle > div:nth-child(3) .strike {
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .statistics .raidTackle > div:nth-child(3) .strike p {
+    width: 100%;
+  }
+
+  .otherPlayers h1 {
+    font-size: 4.7rem;
+  }
+
+  .otherPlayers > .playersDiv {
+    width: 90%;
+  }
+
+  .otherPlayers > .playersDiv > div {
+    width: 100%;
+    padding: 0 10px;
+    flex-direction: column;
+  }
+
+  .slide > div:nth-child(1) {
+    padding-left: 0;
+  }
+
+  .slide > div:nth-child(2) {
+    padding-right: 0;
+  }
+
+  .slide > div:nth-child(2) > img {
+    width: 100%;
+    height: auto;
+    top: -20%;
+  }
+  
+  .otherPlayers > .prev,
+  .otherPlayers > .next {
+    display: none;
+  }
+}

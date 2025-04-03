@@ -1,0 +1,144 @@
+.mediaGrid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem 2rem;
+  padding: 0 6.5rem;
+}
+
+.gridCell {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.gridCell > div:nth-child(1) {
+  width: 100%;
+  height: 69vh;
+  background-color: #000000;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.gridCell img {
+  width: 100%;
+  height: 100%;
+}
+
+.gridCell > div:nth-child(1) .playbtn {
+  height: 85px;
+  width: 85px;
+  border-radius: 50%;
+  background: linear-gradient(
+    to right,
+    rgb(26, 24, 59, 0.9),
+    rgb(26, 24, 59, 0.9)
+  );
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gridCell > div:nth-child(1) .playbtn::before {
+  content: "";
+  height: 0;
+  width: 0;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  border-left: 18px solid #ffffff;
+  margin-left: 5px;
+}
+
+.gridCell > div:nth-child(2) {
+  width: 85%;
+  height: 55px;
+  transform: skewX(-15deg);
+  margin-left: -10px;
+  background-color: #ff4400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gridCell > div:nth-child(2) > h3 {
+  font-size: 19px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  color: #fff;
+  width: 85%;
+  margin-left: 20px;
+}
+
+.gridCell > div:nth-child(2)::before,
+.gridCell > div:nth-child(2)::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -20px;
+  width: 10px;
+  height: 100%;
+  background-color: #ff4400;
+}
+
+.gridCell > div:nth-child(2)::after {
+  right: -37px;
+  width: 7px;
+}
+
+/* media query for mobile devices */
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .mediaGrid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2.4rem 1rem;
+    padding: 0 1rem;
+  }
+
+  .gridCell > div:nth-child(1) {
+    height: 30vh;
+  }
+
+  .gridCell > div:nth-child(2) {
+    height: 50px;
+  }
+
+  .gridCell > div:nth-child(2) > h3 {
+    font-size: 16px;
+    width: 100%;
+  }
+}
+
+/* media query for tablets  */
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .mediaGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem 2rem;
+    padding: 0 1rem;
+  }
+
+  .gridCell > div:nth-child(1) {
+    height: 35vh;
+  }
+
+  .gridCell > div:nth-child(2) {
+    height: 50px;
+  }
+
+  .gridCell > div:nth-child(2) > h3 {
+    font-size: 15px;
+    width: 100%;
+  }
+}

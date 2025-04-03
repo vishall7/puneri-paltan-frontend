@@ -1,0 +1,96 @@
+.paltanNews {
+    height: 140vh;
+    background-image: url("../../../assets/Images/home/paltanNews-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    position: relative;
+    z-index: -1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    padding-bottom: 75px;
+}
+
+.paltanNews > .banner {
+    height: 67%;
+    width: 85.6%;
+    background: url("../../../assets/Images/home/news-banner.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.paltanNews > .banner > h1 {
+    color: #fff;
+    font-size: 90px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 85%;
+    font-weight: 700;
+}
+
+.paltanNews > .banner > h1:nth-child(1) {
+    color: #ff7500;   
+} 
+
+.paltanNews > .banner > button {
+    position: absolute;
+    bottom: 21.5%;
+    padding: 5px 110px;
+}
+
+/* media query for mobile devices */
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+
+    .paltanNews {
+        height: 120vh;
+        padding: 0; 
+    }  
+    
+    .paltanNews > .banner h1 {
+        font-size: 65px;
+        line-height: 1.1;
+    }
+
+    .paltanNews > .banner > h1:nth-child(2){
+        font-size: 32px;
+    }
+    
+    .paltanNews > .banner > button {
+        bottom: 14%;
+        padding: 5px 70px;
+    }
+    
+}
+
+/* media query for tablets */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    .paltanNews {
+        height: 120vh;
+        padding: 0; 
+    }  
+    
+    .paltanNews > .banner h1 {
+        font-size: 75px;
+        line-height: 1.1;
+    }    
+
+    .paltanNews > .banner > h1:nth-child(2){
+        font-size: 42px;
+    }
+    
+    .paltanNews > .banner > button {
+        bottom: 14%;
+        padding: 5px 70px;
+    }
+    
+}

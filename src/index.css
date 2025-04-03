@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.media {
+  padding: 50px 0 80px; 
+  background-color: #FFFFFF; 
+}
+
+
+.btnDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+  margin-bottom: 50px;
+}

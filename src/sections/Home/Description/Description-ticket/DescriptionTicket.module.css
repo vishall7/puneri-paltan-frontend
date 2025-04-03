@@ -1,0 +1,146 @@
+.ticketDiv {
+    position: absolute;
+    z-index: 999;
+    margin: 70px 0 50px;
+    width: 85.7%;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    height: 66vh;
+    display: flex;
+    transform: skewX(-15deg);
+    bottom: -13.5%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.ticketDiv .left,
+.ticketDiv .right {
+    width: 50%;
+    height: 100%;
+    background-color: #2B2521;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.left img, .right img {
+    transform: skewX(15deg);
+}
+
+.ticketDiv .left{
+    background-color: #2B2521;
+}
+
+.ticketDiv .left img {
+    height: 92%;
+    align-self: flex-end;
+}
+
+.ticketDiv .right{      
+    background-color: rgb(0, 0, 0);
+}
+
+.ticketDiv .right img {
+    width: 85%;
+    height: 85%;
+}
+
+.ticketDiv > div > img {
+    width: 100%;
+    height: 100%;  
+}
+
+.ticketBtn {
+    position: absolute;  
+    left: 33%;
+    top: 46%; 
+    transform: skewX(10deg); 
+}
+
+.ticketBtn button {
+    padding: 7px 40px;
+    font-size: 1.2rem;
+    border: 2px solid white;
+    border-left: none;
+}
+
+/* media for mobile devices */
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .ticketDiv {       
+        flex-direction: column;
+        width: 100%; 
+        padding: 0 10px; 
+        transform: skewX(0deg);
+        position: relative;     
+        top: 100%;
+        margin: 100px 0 20px;
+    }
+
+    .ticketDiv > .left,
+    .ticketDiv > .right {
+        width: 85%;
+        transform: skewX(-15deg);        
+    }
+
+    .ticketDiv .left img,
+    .ticketDiv .right img {
+        height: 78%;
+        width: 100%;
+    }
+
+    .ticketDiv .left {
+        left: 7.5%;
+    }
+
+    .ticketDiv .right {
+        right: -7.5%;
+    }
+
+    .ticketBtn {
+        width: 50%;
+        transform: skewX(-15deg);
+    }
+
+    .ticketBtn button {
+        padding: 7px 20px;
+        font-size: 1rem;        
+        border: 2px solid white;
+        border-left: none;
+    }
+}
+
+
+/* media for tablets */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .ticketDiv{
+        flex-direction: row;
+        width: 86%;
+        padding: 0 10px;
+        height: 43vh;
+        margin: 30px 0 20px;
+        overflow: hidden;
+        position: absolute;
+        top: 87%;
+        left: 0;
+        right: 0;
+        margin-inline: auto;
+        box-shadow: none;
+    }
+
+    .ticketDiv > .left,
+    .ticketDiv > .right {
+        width: 100%;        
+    }
+
+    .ticketDiv .left img,
+    .ticketDiv .right img {
+        height: 80%;
+        width: 100%;
+    }
+}
+
+

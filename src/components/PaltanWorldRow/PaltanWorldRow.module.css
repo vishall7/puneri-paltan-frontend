@@ -1,0 +1,77 @@
+.paltanWorldRow {
+    width: 100%;
+    display: flex;
+}
+
+.paltanWorldRow > div {
+    height: 35vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: 50% 30%;
+    background-size: 120%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+.paltanWorldRow > div::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+.paltanWorldRow > div:nth-child(1){
+    background-image: url("../../assets/Images/paltan-world/puneri-tv-2024.png");
+}
+
+.paltanWorldRow > div:nth-child(2){
+    background-image: url("../../assets/Images/paltan-world/puneri-blogs.png");
+}
+
+.paltanWorldRow > div:nth-child(3){
+    background-image: url("../../assets/Images/paltan-world/puneri-wallpapers.png");
+}
+
+.paltanWorldRow > div > h3 {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    position: relative;
+    z-index: 999;
+}
+
+.paltanWorldRow > div:hover {
+    background-size: 150%;
+}
+
+/* media query for mobile devices */
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .paltanWorldRow {
+        flex-direction: column;
+    }
+
+    .paltanWorldRow > div {
+        width: 100%;
+        height: 30vh;
+    }
+}
+
+/* media query for tablets */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .paltanWorldRow > div {
+        width: 100%;
+        height: 30vh;
+    }
+}

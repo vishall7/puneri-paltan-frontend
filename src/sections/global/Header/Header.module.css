@@ -1,0 +1,226 @@
+.box {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar {
+    position: absolute;
+    z-index: 999;
+    margin: 30px 0; 
+    padding: 38px 30px;
+    background: linear-gradient(90deg, rgba(12, 12, 12, 0.6), rgba(8, 8, 8, 0.6));   
+    width: 96%;    
+    transform: skewX(-15deg);
+}
+
+.navbar::after {
+    right: 3%;
+    top: 0;
+}
+
+.navbar::before {
+    left: 20%;
+    bottom: 0;
+}
+
+@keyframes expand {
+  0% {
+    background: radial-gradient(closest-side, #161616, #161616, #161616, #161616);
+  }
+  5% {
+    background: radial-gradient(closest-side, #161616, #161616, #2f2f2f, #161616);
+  }
+  10% {
+    background: radial-gradient(closest-side, #161616, #2f2f2f, #333333, #161616);
+  }
+  15% {
+    background: radial-gradient(closest-side, #2f2f2f, #333333, #4c4c4c, #161616);
+  }
+  20% {
+    background: radial-gradient(closest-side, #333333, #4c4c4c, #666666, #161616);
+  }
+  25% {
+    background: radial-gradient(closest-side, #4c4c4c, #666666, #7f7f7f, #161616);
+  }
+  30% {
+    background: radial-gradient(closest-side, #666666, #7f7f7f, #999999, #161616);
+  }
+  35% {
+    background: radial-gradient(closest-side, #7f7f7f, #999999, #b3b3b3, #161616);
+  }
+  40% {
+    background: radial-gradient(closest-side, #999999, #b3b3b3, #cccccc, #161616);
+  }
+  45% {
+    background: radial-gradient(closest-side, #b3b3b3, #cccccc, #d9d9d9, #161616);
+  }
+  50% {
+    background: radial-gradient(closest-side, #cccccc, #d9d9d9, #ffffff, #161616);
+  }
+  55% {
+    background: radial-gradient(closest-side, #d9d9d9, #ffffff, #ffffff, #161616);
+  }
+  60% {
+    background: radial-gradient(closest-side, #ffffff, #ffffff, #d9d9d9, #161616);
+  }
+  65% {
+    background: radial-gradient(closest-side, #ffffff, #d9d9d9, #cccccc, #161616);
+  }
+  70% {
+    background: radial-gradient(closest-side, #d9d9d9, #cccccc, #b3b3b3, #161616);
+  }
+  75% {
+    background: radial-gradient(closest-side, #cccccc, #b3b3b3, #999999, #161616);
+  }
+  80% {
+    background: radial-gradient(closest-side, #b3b3b3, #999999, #7f7f7f, #161616);
+  }
+  85% {
+    background: radial-gradient(closest-side, #999999, #7f7f7f, #666666, #161616);
+  }
+  90% {
+    background: radial-gradient(closest-side, #7f7f7f, #666666, #4c4c4c, #161616);
+  }
+  95% {
+    background: radial-gradient(closest-side, #666666, #4c4c4c, #333333, #161616);
+  }
+  100% {
+    background: radial-gradient(closest-side, #4c4c4c, #333333, #2f2f2f, #161616);
+  }
+}
+
+.navbar::before,
+.navbar::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 1px;
+  background: radial-gradient(closest-side, #161616, #161616);
+  background-size: 100% 1px;
+  animation: expand 3s ease-in-out forwards infinite;
+}
+
+.navbar > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      
+}
+
+.navbar > div > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 60px; 
+    transform: skewX(0deg);    
+}
+
+.navbar > div > div > div {
+    gap: 15px;
+}
+
+.navbar > div > div a {
+    font-weight: 600;
+    font-size: 14px;    
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #fff;
+    margin: 0 2px;
+    letter-spacing: 1.7px;
+}
+
+.navbar > div > div a:hover {
+    color: #FF9C49;
+}
+
+.navbar > div > div a:active, .navbar > div > div a:focus {
+    color: #FF9C49;
+}
+
+.navbar img {
+    position: absolute;
+    transform: skewX(18deg);
+    top: -22px;
+    left: 63px;
+    cursor: pointer;
+}
+
+.toggle {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  padding: 7px;
+  cursor: pointer;
+  border: none;
+  float: right;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    
+    .navbar {
+        top: 0px;
+        padding: 15px 10px;
+        margin: 20px 0;
+        width: 95%;
+        transform: skewX(0deg);
+    }
+    
+    .navbar > div {
+        display: block !important;
+    }
+    
+    .navbar > div > div {
+        margin-left: 90px; 
+    }
+
+    .navbar img {        
+        transform: skewX(0deg);
+        width: 80px;
+        left: -10px;
+        top: -10px;
+    }
+    
+    .navbar > div > div a {
+        font-size: 12px;
+    }
+
+    .navbar > div > div a:active, .navbar > div > div a:focus {
+        color: #FF9C49;
+    }
+
+    .navbar > div > div a:hover {
+        color: #FF9C49;
+    }
+
+    .navbar::before,
+    .navbar::after {
+        display: none;
+    }
+
+    /* toggle button color white  */
+    
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+  .navbar {
+      top: 0px;
+      padding: 30px;
+      margin: 20px 0;
+      transform: skewX(0deg);
+  }
+  .navbar > div > div {
+      margin-right: 30px; 
+  }
+
+  .navbar > div > div a {
+      font-size: 18px;
+  }
+
+  .navbar img {
+      transform: skewX(0deg);
+      width: 140px;
+      left: 600px !important;
+  }
+}  

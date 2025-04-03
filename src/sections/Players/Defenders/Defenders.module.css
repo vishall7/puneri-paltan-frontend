@@ -1,0 +1,20 @@
+.defenders {
+    background-color: #fff;
+    padding: 30px 0 60px;
+}
+
+/* media query for mobile devices */
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .defenders {
+        padding: 30px 0 40px;
+    }    
+}
+
+/* media query for tablets */
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .defenders {
+        padding: 50px 0 50px;
+    }        
+}
